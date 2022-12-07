@@ -2,6 +2,11 @@ import mongoose from "mongoose";
 
 const UserSchema = new mongoose.Schema(
     {
+      IDuser:{
+        type:Number,
+        required: true,
+        unique:true
+      },
       esAdmin: {
         type: Boolean,
         required: true,
