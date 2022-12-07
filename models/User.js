@@ -2,36 +2,34 @@ import mongoose from "mongoose";
 
 const UserSchema = new mongoose.Schema(
     {
-      firstName: {
-        type: String,
+      esAdmin: {
+        type: Boolean,
         required: true,
-        min: 2,
-        max: 50,
+        default:false
       },
-      lastName: {
+      Nombre: {
         type: String,
         required: true,
-        min: 2,
-        max: 50,
+        max: 75
       },
       email: {
         type: String,
         required: true,
-        max: 50,
-        unique: true,
+        max: 75
       },
       password: {
         type: String,
         required: true,
-        min: 5,
+        max: 75
       },
       picturePath: {
         type: String,
         default: "",
       },
-      friends: {
-        type: Array,
-        default: [],
+      Telefono: {
+        type: String,
+        required: true,
+        max: 50
       },
       location: String,
       occupation: String,
