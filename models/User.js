@@ -15,26 +15,30 @@ const UserSchema = new mongoose.Schema(
       Nombre: {
         type: String,
         required: true,
-        max: 75
+        max: 75,
+        default:null
       },
       email: {
         type: String,
         required: true,
-        max: 75
+        max: 75,
+        default:null
       },
       password: {
         type: String,
         required: true,
-        max: 75
+        max: 75,
+        default:null
       },
       picturePath: {
         type: String,
-        default: "",
+        default: ""
       },
       Telefono: {
         type: String,
         required: true,
-        max: 50
+        max: 50,
+        default:null
       },
       location: String,
       occupation: String,
